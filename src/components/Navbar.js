@@ -1,14 +1,16 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react"
+import { Link } from "gatsby"
 
 export default function Navbar() {
   return (
     <nav>
-      <h1>Web Warrior</h1>
+      <Link to="/">
+        {" "}
+        <h1>Web Warrior</h1>
+      </Link>
       <div className="links">
-        <Link to="/">Home</Link>
         <Link to="/about">About</Link>
-        <Link to="/projects">Portfolio Projects</Link>
+        <Link to="/projects/portfolio">Portfolio Projects</Link>
       </div>
     </nav>
   )
