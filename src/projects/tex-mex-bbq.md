@@ -1,6 +1,6 @@
 ---
-title: The Dojo Coffee House
-url: dojo-coffee-house
+title: Tex Mex BBQ Sizzler
+url: barbeque sizzler
 stack: Gatsby
 ---
 
