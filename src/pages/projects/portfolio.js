@@ -3,6 +3,7 @@ import Layout from '../../components/Layout'
 import * as styles from '../../styles/projects.module.css'
 import {  graphql, Link } from 'gatsby'
 
+
 const Projects = ({data}) => {
 console.log(data)
 const projects = data.allMarkdownRemark.nodes  
@@ -12,7 +13,7 @@ const projects = data.allMarkdownRemark.nodes
       <div className={styles.portfolio}>
         <h2>Portfolio</h2>
         <h3>Projects & Websites I've Created</h3>
-        <div>
+        <div className={styles.projects}>
           {projects.map(project => 
             (
               <Link to={'/projects/' + project.frontmatter.url} key={project.id}>
