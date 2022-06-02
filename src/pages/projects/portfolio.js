@@ -6,7 +6,8 @@ import {  graphql, Link } from 'gatsby'
 
 const Projects = ({data}) => {
 console.log(data)
-const projects = data.allMarkdownRemark.nodes  
+const projects = data.projects.nodes  
+const contact = data.contact.siteMetadata.contact
 
   return (
     <Layout>
@@ -24,6 +25,7 @@ const projects = data.allMarkdownRemark.nodes
               </Link>
             ))  }
         </div>
+        <p>Like what you see? Email me at {contact} !</p>
       </div>
     </Layout>
   );
@@ -34,7 +36,7 @@ export default Projects
 // export page query
 export const query = graphql`
   query ProjectsPage {
-    allMarkdownRemark {
+    projects: allMarkdownRemark {
       nodes {
         frontmatter {
           url
@@ -42,6 +44,12 @@ export const query = graphql`
           title
         }
         id
+      }
+    }
+
+    contact: site{
+      siteMetadata{
+        contact
       }
     }
   }
