@@ -2,6 +2,8 @@
 title: Tex Mex BBQ Sizzler
 url: barbeque sizzler
 stack: Gatsby
+thumb: ../images/thumbs/food.png
+featureImg: ../images/featured/food.png
 ---
 
 **Lorem ipsum dolor sit amet,** consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sociis natoque penatibus et magnis dis parturient. Vulputate odio ut enim blandit volutpat maecenas. Et tortor at risus viverra adipiscing at in. Proin sagittis nisl rhoncus mattis rhoncus urna. Enim sed faucibus turpis in eu mi. Non odio euismod lacinia at quis risus. Quis vel eros donec ac odio. Sed sed risus pretium quam vulputate. Pellentesque massa placerat duis ultricies lacus sed. Viverra justo nec ultrices dui. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Libero volutpat sed cras ornare arcu dui vivamus arcu. Tincidunt id aliquet risus feugiat in.

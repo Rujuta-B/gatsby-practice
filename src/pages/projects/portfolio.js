@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import * as styles from '../../styles/projects.module.css'
 import {  graphql, Link } from 'gatsby'
-
+import Img from 'gatsby-image'
 
 const Projects = ({data}) => {
 console.log(data)
@@ -19,6 +19,7 @@ const contact = data.contact.siteMetadata.contact
             (
               <Link to={'/projects/' + project.frontmatter.url} key={project.id}>
                 <div>
+                  <Img fluid={project.frontmatter.thumb.childImageSharp.fluid}/>
                   <h3>{project.frontmatter.title}</h3>
                   <p>{project.frontmatter.stack}</p>
                 </div>
@@ -42,6 +43,13 @@ export const query = graphql`
           url
           stack
           title
+          thumb {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         id
       }
